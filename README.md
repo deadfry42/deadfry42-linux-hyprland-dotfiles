@@ -5,10 +5,10 @@ dot files for Hyprland, themed around the KDE Plasma default background (as of p
 
 # required packages
  - > hyprland / hyprland-nvidiaᴬᵁᴿ
-   > grim
-   > slurp
-   > hyprshotᴬᵁᴿ
-   > swaync
-   > waybar
-   > xwaylandvideobridgeᴬᵁᴿ
-   > xdg-desktop-portal-hyprland
+ - > grim
+ - > slurp
+ - > hyprshotᴬᵁᴿ
+ - > swaync
+ - > waybar
+ - > xwaylandvideobridgeᴬᵁᴿ
+ - > xdg-desktop-portal-hyprland
