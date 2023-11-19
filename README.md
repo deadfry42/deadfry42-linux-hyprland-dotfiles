@@ -41,6 +41,7 @@ tested on arch and debian w/ nvidia gpu
  - clicking on wifi in top right to configure wifi
  - changing volume by scrolling on the volume widget in the top left
  - opening wofi from clicking on the arch icon
+ - clicking on workspace brings you to that workspace
  - system tray
  - hyprland in all its glory
 
@@ -53,8 +54,14 @@ tested on arch and debian w/ nvidia gpu
  - open wofi with Super+R
  - open vinegar (roblox player flatpak) with Super+G
  - move workspaces 1-10 with Super+(1-9 & 0)
+ - scroll through workspaces with Super+MouseWheel
+ - kill apps with Super+X
+ - toggle floating on programs with Super+V
+ - close hyprland with Super+M
+ - do some funky resizing stuff with Super+P
 
 # installation
+use sddm for login manager (wayland session support)
 install all required packages
 make sure hyprland opens
 place all of the dot files into your ~/.config folder
