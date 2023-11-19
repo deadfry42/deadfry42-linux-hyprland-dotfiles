@@ -64,4 +64,8 @@ tested on arch and debian w/ nvidia gpu
 use sddm for login manager (wayland session support),  
 install all required packages,  
 make sure hyprland opens,  
-place all of the dot files into your ~/.config folder
+place all of the dot files into your ~/.config folder,  
+boot hyprland  
+done !!1!!!  
+
+now flex
