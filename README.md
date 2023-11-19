@@ -1,7 +1,7 @@
 # dotfiles
 note: might become outdated fast because of how indecisive i am sometimes (which is all the time btw)
 
-the .config files for my hyprland(kde) rice
+the .config files for my Hyprland x KDE rice
 
 dot files for Hyprland, themed around the KDE Plasma default background (as of plasma 5.27)
 
@@ -27,7 +27,7 @@ tested on arch and debian w/ nvidia gpu
  -  ttf-nerd-fonts-symbols-mono
  -  noto-fonts-emoji
  -  ttf-joypixels
-# optional packages
+# optional packages (for certain keybinds & stuff)
  -  dolphin
  -  vinegarꟳᴸᴬᵀᴾᴬᴷ
  -  nm-connection-editor
@@ -51,7 +51,7 @@ tested on arch and debian w/ nvidia gpu
  - full screenshot with Super+Shift+S
  - region screenshot with Super+Shift+X
  - open discord with Super+D
- - open thorium with Super+F
+ - open thorium-browser with Super+F
  - open dolphin with Super+E
  - open wofi with Super+R
  - open vinegar (roblox player flatpak) with Super+G
