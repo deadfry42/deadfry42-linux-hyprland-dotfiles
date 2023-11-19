@@ -62,6 +62,13 @@ tested on arch and debian w/ nvidia gpu
  - close hyprland with Super+M
  - do some funky resizing stuff with Super+P
 
+# screenshots
+<img src="preview/1.png">
+<img src="preview/2.png">
+<img src="preview/3.png">
+<img src="preview/4.png">
+<img src="preview/5.png">
+
 # installation
 use sddm for login manager (wayland session support),  
 install all required packages,  
