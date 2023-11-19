@@ -6,6 +6,8 @@ dot files for Hyprland, themed around the KDE Plasma default background (as of p
 these dotfiles do not include any monitor config, as that is specific to your setup.
 please follow the guide at https://wiki.hyprland.org/Configuring/Monitors/ for information on how to do this.
 
+tested on arch and debian w/ nvidia gpu
+
 # required packages
  -  hyprland / hyprland-nvidiaᴬᵁᴿ
  -  grim
