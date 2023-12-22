@@ -1,6 +1,6 @@
 {
   "layer": "top",
-    "modules-left": ["custom/arch", "pulseaudio", "hyprland/window"],
+    "modules-left": ["custom/arch", "wireplumber", "hyprland/window"],
     "modules-center": ["clock", "custom/notification"],
     "modules-right": ["tray", "hyprland/workspaces", "network"],
     "height": 10,
@@ -21,7 +21,7 @@
       "escape": true
      },
     "custom/arch": {
-      "format": "\uf303",
+      "format": "\uf359",
       "tooltip": false,
       "on-click": "killall wofi; wofi --show drun --allow-images"
     },
@@ -41,21 +41,27 @@
     },
     "clock": {
       "format": "  {:%H:%M}",
+      "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center datetime --verbose"
     },
     "backlight": {
       "device": "intel_backlight",
       "format": "{icon}   {percent}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    "pulseaudio": {
-      "format": "{icon}   {volume}%",
-      "format-muted": "",
-      "tooltip": false,
-      "format-icons": {
-        "headphone": "",
-        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
-      },
-      "scroll-step": 1,
+    "custom/pipewire": {
+        "tooltip": false,
+        "max-length": 6,
+        "signal": 8,
+        "restart-interval": 0,
+        "exec": "$HOME/.config/waybar/scripts/pipewire.sh"
+},
+"wireplumber": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "",
+	"format-icons": {
+	"default": [" ", " ", " "],
+},
+	"tooltop": false
     },
     "bluetooth": {
       "format": " {status}",
@@ -71,7 +77,7 @@
       "format-ethernet": "{ipaddr}/{cidr} ",
       "format-disconnected": "󰖪   No Network",
       "tooltip": false,
-      "on-click": "killall nm-connection-editor; nm-connection-editor"
+      "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center wifi --verbose"
     },
     "battery": {
       "format": "{icon}   {capacity}%",
