@@ -14,7 +14,7 @@ installed on debian w/ compiling from source
 note: might become outdated fast because of how indecisive i am sometimes (which is all the time btw) also adhd or something idfk im not diagnosed
 
 # required packages
- -  hyprland / hyprland-git (hyprland-nvidiaᴬᵁᴿ & its git variant has been discontinued)
+ -  hyprland / hyprland-gitᴬᵁᴿ (hyprland-nvidiaᴬᵁᴿ & its git variant has been discontinued)
  -  swaync (notification center)
  -  waybar (top bar)
  -  xwaylandvideobridgeᴬᵁᴿ (screensharing, primarily on discord)
