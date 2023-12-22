@@ -1,38 +1,42 @@
 # dotfiles
-note: might become outdated fast because of how indecisive i am sometimes (which is all the time btw)
 
 the .config files for my Hyprland x KDE rice
 
 dot files for Hyprland, themed around the KDE Plasma default background (as of plasma 5.27)
 
 these dotfiles do not include any monitor config, as that is specific to your setup.
-please follow the guide at https://wiki.hyprland.org/Configuring/Monitors/ for information on how to do this.
+please follow the guide at https://wiki.hyprland.org/Configuring/Monitors/ for information on how to do this. (its in the hyprland.conf file)
 
-tested on arch and debian w/ nvidia gpu
+tested on a nvidia gpu, on arch and debian.
+installed on arch w/ hyprland-nvidiaᴬᵁᴿ w/ yay
+installed on debian w/ compiling from source
+
+note: might become outdated fast because of how indecisive i am sometimes (which is all the time btw) also adhd or something idfk im not diagnosed
 
 # required packages
- -  hyprland / hyprland-nvidiaᴬᵁᴿ
- -  grim
- -  slurp
- -  hyprshotᴬᵁᴿ
- -  swaync
- -  waybar
- -  xwaylandvideobridgeᴬᵁᴿ
- -  xdg-desktop-portal-hyprland
- -  xdg-desktop-portal-gtk
- -  swaybg
- -  polkit-kde-agent
- -  kitty
- -  wofi
- -  ttf-nerd-fonts-symbols-mono
+ -  hyprland / hyprland-git (hyprland-nvidiaᴬᵁᴿ & its git variant has been discontinued)
+ -  swaync (notification center)
+ -  waybar (top bar)
+ -  xwaylandvideobridgeᴬᵁᴿ (screensharing, primarily on discord)
+ -  xdg-desktop-portal-hyprland (screensharing)
+ -  xdg-desktop-portal-gtk (filepicker)
+ -  swaybg (background)
+ -  polkit-kde-agent (giving root perms)
+ -  kitty (tty emu)
+ -  wofi (app launcher)
+ -  ttf-nerd-fonts-symbols-mono (used by waybar)
  -  noto-fonts-emoji
  -  ttf-joypixels
 # optional packages (for certain keybinds & stuff)
- -  dolphin
- -  vinegarꟳᴸᴬᵀᴾᴬᴷ
- -  nm-connection-editor
- -  discord
- -  thorium-browser-binᴬᵁᴿ
+ -  yayᴬᵁᴿ (to help download aur packages)
+ -  dolphin (my file explorer of choice)
+ -  vinegarꟳᴸᴬᵀᴾᴬᴷ (roblox)
+ -  nm-connection-editor (clicking on wifi in waybar)
+ -  discord (discord)
+ -  thorium-browser-binᴬᵁᴿ (my browser of choice)
+ -  grim (screenshotting)
+ -  slurp (screenshotting)
+ -  hyprshotᴬᵁᴿ (screenshotting)
 
 # features
  - notifications, right click on bell to silence/unsilence
@@ -45,7 +49,7 @@ tested on arch and debian w/ nvidia gpu
  - opening wofi from clicking on the arch icon
  - clicking on workspace brings you to that workspace
  - system tray
- - hyprland in all its glory
+ - hyprland lmao
 
 # keybinds
  - full screenshot with Super+Shift+S
@@ -76,5 +80,3 @@ make sure hyprland opens,
 place all of the dot files into your ~/.config folder,  
 boot hyprland  
 done !!1!!!  
-
-now flex
