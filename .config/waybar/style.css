@@ -40,7 +40,7 @@ window#waybar.empty #window {
   color: #78a3a6;
 }
 
-#clock, #backlight, #pulseaudio, #tray, #bluetooth, #network, #battery, #custom-notification {
+#clock, #backlight, #custom-pipewire, #wireplumber, #tray, #bluetooth, #network, #battery, #custom-notification {
   border-radius: 10px;
   background-color: rgba(25, 35, 46, 1);
   color: #78a3a6;
