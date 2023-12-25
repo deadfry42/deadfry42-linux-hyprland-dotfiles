@@ -8,6 +8,8 @@ tested on a nvidia gpu, on arch and debian.
 installed on arch w/ hyprland-nvidiaᴬᵁᴿ w/ yay
 installed on debian w/ compiling from source
 
+tested on RPI 4B (waybar & swaync not working)
+
 note: might become outdated fast because of how indecisive i am sometimes (which is all the time btw) also adhd or something idfk im not diagnosed
 
 # required packages
