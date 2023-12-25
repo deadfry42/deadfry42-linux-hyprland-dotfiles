@@ -22,6 +22,7 @@ note: might become outdated fast because of how indecisive i am sometimes (which
  -  wofi (app launcher)
  -  ttf-nerd-fonts-symbols-mono (used by waybar)
  -  noto-fonts-emoji
+ -  hyprpaper
  -  ttf-joypixels
  -  wlogoutᴬᵁᴿ
 # optional packages
