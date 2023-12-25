@@ -75,3 +75,6 @@ note: might become outdated fast because of how indecisive i am sometimes (which
 - configure ~/.config/hypr/settings/monitor.conf [using this guide](https://wiki.hyprland.org/Configuring/Monitors/)
 - boot hyprland
 - done
+
+# post-installation
+- to configure things like keybinds, there is a folder called settings in ~/.config/hypr. this is to organise your settings, and to make things more streamlined. follow the format that the file already has, and you'll be able to bind keybinds in the way you want.
