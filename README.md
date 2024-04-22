@@ -6,8 +6,13 @@ my dotfiles for Hyprland, themed around the KDE Plasma "Mountain" background (i 
 
 tested exclusively on nvidia. if not using nvidia, please comment out the "~/.config/hypr/modules/nvidia.conf" file.
 
-note: might become outdated fast (because im bad at being productive)  
-note: these are my personal dotfiles. if you don't like something about it, you can fork it or something idk
+> [!NOTE]
+> might become outdated fast (because im bad at being productive)  
+> 
+> these are my personal dotfiles. if you don't like something about it, you can fork it or something idk
+
+> [!IMPORTANT]
+> these are experimental dotfiles. things can and will break. do not attempt to daily drive this until it is in the "main" branch.
 
 # required packages (arch)
 -  hyprland
@@ -71,7 +76,8 @@ note: these are my personal dotfiles. if you don't like something about it, you 
 - double check hyprland opens. [you may need to set kernel parameters](https://wiki.hyprland.org/Nvidia/) if you use nvidia.
 - install required packages (and optional packages if you'd like)
 - import dotfiles from this repo
-- configure ~/.config/hypr/settings/monitor.conf [using this guide](https://wiki.hyprland.org/Configuring/Monitors/)
+- configure ~/.config/hypr/modules/monitor.conf [using this guide](https://wiki.hyprland.org/Configuring/Monitors/)
+- remove ~/.config/hypr/modules/nvidia.conf if not using a nvidia card 
 - open hyprland
 - done
 
