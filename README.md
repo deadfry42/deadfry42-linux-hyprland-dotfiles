@@ -1,4 +1,4 @@
-# dotfiles
+# DeadFry42 Linux Hyprland dotfiles
 
 the .config files for my Hyprland rice.
 
