@@ -1,5 +1,7 @@
 # dotfiles
 
+### note : outdated, current version in the "experimental" branch  
+  
 the .config files for my Hyprland x KDE rice
 
 dot files for Hyprland, themed around the KDE Plasma default background (as of plasma 5.27)
