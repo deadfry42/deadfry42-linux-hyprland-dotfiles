@@ -2,7 +2,7 @@
 
 the .config files for my Hyprland rice.
 
-dot files for Hyprland, themed around the KDE Plasma "Mountain" background (i really like it)
+my dotfiles for Hyprland, themed around the KDE Plasma "Mountain" background (i really like it)
 
 tested exclusively on nvidia. if not using nvidia, please comment out the "~/.config/hypr/modules/nvidia.conf" file.
 
@@ -44,16 +44,6 @@ note: these are my personal dotfiles. if you don't like something about it, you 
     - pc locks after 30 minutes of inactivity
 
 # keybinds
- - full screenshot with Super+Shift+S
- - region screenshot with Super+Shift+X
- - open wofi with Super+R
- - see logout screen with Super+L
- - move workspaces 1-10 with Super+(1-9 & 0)
- - kill apps with Super+X
- - toggle floating on programs with Super+V
- - close hyprland with Super+M
- - do some funky resizing stuff with Super+P
-
 - open application launcher w/ Super+R
 - lock your pc with Super+L
 - kill apps with Super+X
