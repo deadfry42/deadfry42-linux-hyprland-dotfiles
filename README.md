@@ -1,52 +1,47 @@
 # dotfiles
 
-the .config files for my Hyprland x KDE rice
+the .config files for my Hyprland rice.
 
-dot files for Hyprland, themed around the KDE Plasma default background (as of plasma 5.27)
+dot files for Hyprland, themed around the KDE Plasma "Mountain" background (i really like it)
 
-tested on a nvidia gpu, on arch and debian.
-installed on arch w/ hyprland-nvidiaᴬᵁᴿ w/ yay
-installed on debian w/ compiling from source
+tested exclusively on nvidia. if not using nvidia, please comment out the "~/.config/hypr/modules/nvidia.conf" file.
 
-tested on RPI 4B, 8GB w/ official touchscreen (hyprpaper, waybar & swaync not working)
+note: might become outdated fast (because im bad at being productive)  
+note: these are my personal dotfiles. if you don't like something about it, you can fork it or something idk
 
-note: might become outdated fast because of how indecisive i am sometimes (which is all the time btw) also adhd or something idfk im not diagnosed
-
-# required packages
- -  hyprland / hyprland-gitᴬᵁᴿ (hyprland-nvidiaᴬᵁᴿ & its git variant has been discontinued)
- -  swaync (notification center)
- -  waybar (top bar)
- -  xwaylandvideobridgeᴬᵁᴿ (screensharing, primarily on discord)
- -  xdg-desktop-portal-hyprland (screensharing)
- -  xdg-desktop-portal-gtk (filepicker)
- -  hyprpaperᴬᵁᴿ (background)
- -  polkit-kde-agent (giving root perms)
- -  wofi (app launcher)
- -  ttf-nerd-fonts-symbols-mono (used by waybar)
- -  noto-fonts-emoji
- -  ttf-joypixels
- -  wlogoutᴬᵁᴿ
+# required packages (arch)
+-  hyprland
+-  hyprlock
+-  hypridle
+-  aylurs-gtk-shellᴬᵁᴿ (top bar)
+-  swaync (notification center)
+-  hyprpaperᴬᵁᴿ (background)
+-  wofi (app launcher)
 # optional packages
- -  yayᴬᵁᴿ (to help download aur packages)
- -  gnome-control-center (clicking on wifi & clock in waybar)
- -  grim (screenshotting)
- -  slurp (screenshotting)
- -  hyprshotᴬᵁᴿ (screenshotting)
- -  kitty (to use in hyprland, as it is the default in the auto generated config. I'd recommend using alacritty later)
+-  [fancygrim](https://github.com/memyboi/fancygrim) (my own creation) (screenshotting)
+-  wlogoutᴬᵁᴿ (logout menu)
+-  xdg-desktop-portal-hyprland (screensharing)
+-  xdg-desktop-portal-gtk (filepicker)
+-  polkit-kde-agent (giving root perms)
+-  io.missioncenter.MissionCenter (flatpak) (task manager)
+
 
 # features
- - notifications, right click on bell to silence/unsilence
- - screensharing on outdated platforms (discord) via xwaylandvideobridge
- - polkit authentication via kde's agent
- - gtk filepicker
- - applicaton launcher with wofi
- - clicking on wifi in top right to configure wifi
- - changing volume by scrolling on the volume widget in the top left
- - opening wofi from clicking on the arch icon
- - clicking on workspace brings you to that workspace
- - system tray
- - wlogout
- - hyprland (obviously)
+-  a fully functioning bar made with ags
+    - arch flex (i use arch btw)
+    - clock (for telling time)
+    - notifications (right now, just opens swaync)
+    - titlebar
+    - animated workspace switcher (inspired by gnome)
+    - system tray
+    - control panel (incomplete)
+-  hyprland
+    - many benefits, too many to list :P
+    - wayland
+-  made for nvidia
+    - still has a few quirks tho, due to the drivers
+-  cool lock screen
+    - pc locks after 30 minutes of inactivity
 
 # keybinds
  - full screenshot with Super+Shift+S
@@ -58,25 +53,37 @@ note: might become outdated fast because of how indecisive i am sometimes (which
  - toggle floating on programs with Super+V
  - close hyprland with Super+M
  - do some funky resizing stuff with Super+P
- - add ur own keybinds in ~/.config/hypr/settings/binds.conf ([guide](https://wiki.hyprland.org/Configuring/Keywords/))
 
-# screenshots
-<img src="preview/1.png">
-<img src="preview/2.png">
-<img src="preview/3.png">
-<img src="preview/4.png">
-<img src="preview/5.png">
+- open application launcher w/ Super+R
+- lock your pc with Super+L
+- kill apps with Super+X
+- power menu with Super+M
+- move workspaces 1-10 w/ Super+0 & Super+1-9
+- full screenshot with Super+Shift+S
+- area screenshot with Super+Shift+X
+- window screenshot with Super+Shift+Z
+- special workspace with Super+O
+- swap keyboard layouts with Super+H
+- open task manager with Ctrl+Shift+Esc (io.missioncenter.MissionCenter flatpak required)
+- add ur own keybinds in ~/.config/hypr/modules/binds.conf ([guide](https://wiki.hyprland.org/Configuring/Keywords/))
+
+# preview
+<img src="preview/1new.png">
+<img src="preview/2new.png">
+<img src="preview/3new.png">
+<img src="preview/4new.png">
+<img src="preview/5new.png">
 
 # installation
-- make sure you use a display manager that supports the wayland session (eg sddm, gdm, or just tty cuz y not)
-- install hyprland or hyprland-gitᴬᵁᴿ
-- boot into hyprland with the `Hyprland` command in tty, or through ur display manager
+- make sure you use a display manager that supports the wayland session (eg sddm, gdm)
+- install hyprland
+- boot into hyprland with the `Hyprland` command in tty, or through your display manager of choice
 - double check hyprland opens. [you may need to set kernel parameters](https://wiki.hyprland.org/Nvidia/) if you use nvidia.
 - install required packages (and optional packages if you'd like)
 - import dotfiles from this repo
 - configure ~/.config/hypr/settings/monitor.conf [using this guide](https://wiki.hyprland.org/Configuring/Monitors/)
-- boot hyprland
+- open hyprland
 - done
 
 # post-installation
-- to configure things like keybinds, there is a folder called settings in ~/.config/hypr. this is to organise your settings, and to make things more streamlined. follow the format that the file already has, and you'll be able to bind keybinds in the way you want.
+- to configure things like keybinds, there is a folder called modules in ~/.config/hypr. this is to organise your settings, and to make things more streamlined. follow the format that the file already has, and you'll be able to bind keybinds in the way you want.
