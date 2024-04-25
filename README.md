@@ -83,3 +83,7 @@ tested exclusively on nvidia. if not using nvidia, please comment out the "~/.co
 
 # post-installation
 - to configure things like keybinds, there is a folder called modules in ~/.config/hypr. this is to organise your settings, and to make things more streamlined. follow the format that the file already has, and you'll be able to bind keybinds in the way you want.
+
+# inspirations & thank yous
+- aylur - making ags (aylur's gtk shell) and their amazing config (which i used as reference)  
+- vaxry - hyprland  
