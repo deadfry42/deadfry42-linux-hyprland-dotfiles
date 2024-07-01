@@ -1,4 +1,4 @@
-# dotfiles
+# deadfry42-linux-hyprland-dotfiles
 
 > [!WARNING]
 > these dotfiles are outdated.  
