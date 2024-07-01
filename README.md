@@ -1,6 +1,10 @@
 # dotfiles
 
-### note : outdated, current version in the "experimental" branch  
+> [!WARNING]
+> these dotfiles are outdated.  
+> to see the up to date dotfiles, see the "experimental" branch.  
+>
+> please keep in mind that those are experimental, and may not work perfectly.
   
 the .config files for my Hyprland x KDE rice
 
