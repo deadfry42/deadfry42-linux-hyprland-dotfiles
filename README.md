@@ -93,11 +93,11 @@ Don't like the keybinds / need more keybinds?
 To go `~/.config/hypr/modules/binds.conf` and modify away! ([guide](https://wiki.hyprland.org/Configuring/Keywords/))
 
 # preview
-<img src="preview/1new.png">
-<img src="preview/2new.png">
-<img src="preview/3new.png">
-<img src="preview/4new.png">
-<img src="preview/5new.png">
+<img src="preview/home.png">
+<img src="preview/apps.png">
+<img src="preview/panels.png">
+<img src="preview/notifs.png">
+<img src="preview/tiling.png">
 
 # installation
 - make sure you use a display manager that supports the wayland session (eg sddm, gdm)
