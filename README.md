@@ -1,5 +1,16 @@
 # DeadFry42 Linux Hyprland dotfiles
 
+> [!WARNING]
+> these are the experimental dotfiles.  
+> things are expected to break / not work.  
+> please wait until they are in the main branch until you use them.
+>  
+> many things are still destined to change, such as:
+>   - notifications  
+>   - application launcher
+>   - control panel (it's still unfinished)
+>   - config layout  
+
 the .config files for my Hyprland rice.
 
 my dotfiles for Hyprland, themed around the KDE Plasma "Mountain" background for KDE Plasma 5.27.
@@ -11,17 +22,6 @@ tested exclusively on nvidia. if not using nvidia, please remove the `~/.config/
 > let me know if I forgot to include anything or if anything doesn't work!!!  
 > 
 > these are my personal dotfiles. if you don't like something about it, you can fork it or something idk
-
-> [!IMPORTANT]
-> these are the experimental dotfiles.  
-> things are expected to break / not work.  
-> please wait until they are in the main branch until you use them.
->  
-> many things are still destined to change, such as:
->   - notifications  
->   - application launcher
->   - control panel (it's still unfinished)
->   - config layout  
 
 # required packages (arch)
 -  hyprland
