@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# simple script to make my life easier when distributing my dotfiles!
+
+# deps:
+# bash
+
+GREEN='\033[0;32m'
+BLUE='\033[0;34m' 
+CLEAR='\033[0m'
+RED='\033[0;31m'
+
+aaa() { # execute & give feedback without making my life a living hell.
+    echo -e "${GREEN}> $@${CLEAR}"
+    $@
+}
+
+aaa rm -rf ./config
+aaa mkdir config
+aaa cd config
+
+# hypr
+echo -e "${RED}Starting Hyprland config!${CLEAR}"
+aaa mkdir hypr
+aaa cp ~/.config/hypr/hyprpaper.conf ./hypr
+aaa cp ~/.config/hypr/hyprlock.conf ./hypr
+aaa cp ~/.config/hypr/hyprland.conf ./hypr
+aaa cp ~/.config/hypr/hypridle.conf ./hypr
+aaa cp ~/.config/hypr/keyboardToggle.sh ./hypr
+aaa cp -r ~/.config/hypr/keyboard ./hypr
+aaa cp -r ~/.config/hypr/modules ./hypr
+aaa cp ~/.config/hypr/Background.png ./hypr
+aaa cd ./hypr/modules
+aaa rm -rf hardcoded-fixes-to-not-include.conf
+aaa rm -rf monitor.conf
+aaa touch monitor.conf
+aaa tee -a monitor.conf <<EOF
+# you need to change this file depending on what montior(s) you have
+# wiki: https://wiki.hyprland.org/Configuring/Monitors
+# monitor=name,resolution@framerate,position,scale
+
+#monitor=HDMI-A-1,1920x0180@60,0x0,1
+EOF
+aaa cd ../../
+
+# wofi
+echo -e "${RED}Starting wofi config!${CLEAR}"
+aaa cp -r ~/.config/wofi .
+echo -e "${RED}No surgery required!${CLEAR}"
+
+# ags
+echo -e "${RED}Starting ags config!${CLEAR}"
+aaa cp -r ~/.config/ags .
+aaa cd ./ags
+aaa rm -rf BACKUPS
+aaa rm -rf old
+aaa rm -rf waybarstyle.css
+aaa cd ../
+
+# alacritty
+echo -e "${RED}Starting alacritty config!${CLEAR}"
+aaa cp -r ~/.config/alacritty .
+echo -e "${RED}No surgery required!${CLEAR}"
+
+echo -e "${RED}Distributing this file!${CLEAR}"
+aaa cp ../rebase-dotfiles .
+
+echo -e "${RED}---${CLEAR}"
+echo -e "${RED}Dotfiles complete!${CLEAR}"
+echo -e "${RED}---${CLEAR}"

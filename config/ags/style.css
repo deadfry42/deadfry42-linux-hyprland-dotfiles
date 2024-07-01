@@ -1,0 +1,190 @@
+/* i am aware this file is massive
+i need therapy
+*/
+
+* {
+    border: none;
+    font-family: 'Arial','Symbols Nerd Font Mono';
+    font-size: 14px;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    text-shadow: 0 0 5px black;
+  }
+
+.alonebox {
+    color: #78a3a6;
+    margin-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom:5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.tray-item {
+    background: none;
+    border: 0px;
+    padding: 0px;
+}
+
+.agsbar {
+    background-color: rgba(18, 42, 46, 0.5);
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /*border-bottom-left-radius: 10; 
+    border-bottom-right-radius: 10; */
+}
+
+.workspace-button {
+    background: #386770;
+    font-size: 0;
+    min-width: 7pt;
+    min-height: 7pt;
+    margin: 3px;
+    border-radius: 10px;
+    /*box-shadow: inset 0 0 0 $border-width $border-color;*/
+    transition: all 0.6s cubic-bezier(0.05, 0.9, 0.1, 1.05);
+}
+  
+.workspace-button-focused {
+    background: #558993;
+    font-size: 0;
+    min-width: 25pt;
+    min-height: 10pt;
+    margin: 3px;
+    transition: all 0.6s cubic-bezier(0.05, 0.9, 0.1, 1.05);
+}
+
+.workspace-button-dead {
+    background: rgba(0, 0, 0, 0);
+    font-size: 0;
+    min-width: 0pt;
+    min-height: 0pt;
+    margin: 0px;
+    transition: all 0.6s cubic-bezier(0.05, 0.9, 0.1, 1.05);
+}
+
+.arch-flex {
+    font-size: 17px;
+    color: #78a3a6;
+}
+
+.boxleft {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.boxright {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.screenfold-corner {
+    box-shadow: 0 0 0 17.5px rgba(18, 42, 46, 0.5);
+    border-radius: 17.5px;
+    margin-bottom: -50px;
+}
+
+.controlpanelbutton {
+    color: #78a3a6;
+    background: none;
+    transition: all 0.3s ease-out;
+}
+
+.controlpanelbutton-active {
+    color: white;
+    transition: all 0.3s ease-out;
+    background: #386770;
+}
+
+.archflexbutton {
+    color: #78a3a6;
+    background: none;
+    transition: all 0.3s ease-out;
+}
+
+.archflexbutton-active {
+    color: white;
+    transition: all 0.3s ease-out;
+    background: #386770;
+}
+
+.controlpanelframe {
+    background-color: rgba(18, 42, 46, 0.5);
+    border-radius: 17.5px;
+    margin-right: 4px;
+    padding: 10px;
+}
+
+.archflexframe {
+    background-color: rgba(18, 42, 46, 0.5);
+    border-radius: 17.5px;
+    margin-left: 4px;
+    padding: 10px;
+}
+
+.ccitembg {
+    background-color: rgba(56, 103, 112, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.player {
+    padding: 10px;
+    min-width: 350px;
+}
+
+.player .img {
+    min-width: 100px;
+    min-height: 100px;
+    background-size: cover;
+    background-position: center;
+    /*border-radius: 13px;*/
+    box-shadow: 1px 3px 3px black;
+    margin-right: 1em;
+}
+
+.player .title {
+    font-size: 1.2em;
+}
+
+.player .artist {
+    font-size: 1.1em;
+    /*color: @insensitive_fg_color;*/
+}
+
+.player scale.position {
+    padding: 0;
+    margin-bottom: .3em;
+}
+
+.player scale.position trough {
+    min-height: 8px;
+}
+
+.player scale.position slider {
+    all: unset;
+}
+
+.player button {
+    min-height: 1em;
+    min-width: 1em;
+    padding: .3em;
+}
+
+.player button.play-pause {
+    margin: 0 .3em;
+}
+
+.popupframe {
+    background-color: rgba(18, 42, 46, 0.5);
+    border-radius: 17.5px;
+    margin-right: 4px;
+    padding: 10px;
+}
