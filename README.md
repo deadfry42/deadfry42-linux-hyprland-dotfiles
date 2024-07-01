@@ -8,6 +8,7 @@ tested exclusively on nvidia. if not using nvidia, please remove the `~/.config/
 
 > [!NOTE]
 > might become outdated fast (because im bad at being productive)  
+> let me know if I forgot to include anything or if anything doesn't work!!!  
 > 
 > these are my personal dotfiles. if you don't like something about it, you can fork it or something idk
 
@@ -66,16 +67,25 @@ Install io.missioncenter.MissionCenter
 # keybinds
 | Keys | Action | Notes |
 | :--- | :--- | :----|
-| <kbd>Super</kbd> + <kbd>R</kbd> | Open Application launcher | Currently through wofi |
-| <kbd>Super</kbd> + <kbd>H</kbd> | Alternate keyboard layouts | Config required |
-| <kbd>Super</kbd> + <kbd>O</kbd> | Open Scratchpad | (it's just Hyprland's special workspaces |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kdb> | Task manager | io.missioncenter.MissionCenter flatpak required |
+| <kbd>Super</kbd> + <kbd>Q</kbd> | Open Terminal | Default is set to alacritty |
+| <kbd>Super</kbd> + <kbd>E</kbd> | Open File manager | Default is set to thunar |
+| <kbd>Super</kbd> + <kbd>F</kbd> | Open Browser | Default is set to firefox |
+| <kbd>Super</kbd> + <kbd>V</kbd> | Make window float | |
+| <kbd>Super</kbd> + <kbd>J</kbd> | Toggle split orientation of windows | |
+| <kbd>Super</kbd> + <kbd>P</kbd> | Make window custom sized while tiled | |
+| <kbd>Super</kbd> + <kbd>L</kbd> | Lock | hyprlock required |
+| <kbd>Super</kbd> + <kbd>H</kbd> | Alternate keyboard layouts | Hardcoded, good luck lol |
 | <kbd>Super</kbd> + <kbd>0</kbd>-<kbd>9</kbd> | Move workspace | |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd>-<kbd>9</kbd> | Move window to workspace | |
-| <kbd>Super</kbd> + <kbd>L</kbd> | Lock | hyprlock required |
+| <kbd>Super</kbd> + <kbd>Home</kbd><br><kbd>XF86Launch6</kbd> | Open Control Panel | |
+| <kbd>Super</kbd> + <kbd>Insert</kbd><br><kbd>XF86Launch7</kbd> | Open Fake Windows Activation prompt | funny |
+| <kbd>Super</kbd> + <kbd>R</kbd> | Open Application launcher | Currently through wofi |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kdb> | Task manager | io.missioncenter.MissionCenter flatpak required |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Full screenshot | fancygrim required, otherwise change in `modules/binds.conf` |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Area screenshot | fancygrim required, otherwise change in `modules/binds.conf` |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> | Window screenshot | fancygrim required, otherwise change in `modules/binds.conf` |
+| <kbd>Super</kbd> + <kbd>O</kbd> | Open Scratchpad | (it's just Hyprland's special workspaces) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> | Move window to Scratchpad | |
 | <kbd>Super</kbd> + <kbd>X</kbd> | Close applications | |
 | <kbd>Super</kbd> + <kbd>M</kbd> | Power menu | |
 
