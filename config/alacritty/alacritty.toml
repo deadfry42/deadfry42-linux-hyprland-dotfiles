@@ -1,2 +1,21 @@
 [window]
 opacity = 0.25
+
+[font]
+size = 11.0
+
+[font.bold]
+family = "JetBrainsMonoNL NFM"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMonoNL NFM"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMonoNL NFM"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMonoNL NFM"
+style = "Regular"

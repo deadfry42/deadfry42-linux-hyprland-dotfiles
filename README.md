@@ -98,6 +98,8 @@ To go `~/.config/hypr/modules/binds.conf` and modify away! ([guide](https://wiki
 <img src="preview/panels.png">
 <img src="preview/notifs.png">
 <img src="preview/tiling.png">
+<img src="preview/lock.png">
+<img src="preview/logout.png">
 
 # installation
 - make sure you use a display manager that supports the wayland session (eg sddm, gdm)

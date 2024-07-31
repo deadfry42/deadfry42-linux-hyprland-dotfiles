@@ -26,14 +26,14 @@ export const archflexmenu = () => Widget.Window({
             Widget.Box({
                 css: "padding: 1px;"
             }, Widget.Revealer({
-                transition: "slide_right",
+                transition: "slide_up",
                 transitionDuration: 500,
                 child: Widget.Box({
                     vertical: true,
                     children: [
                         Widget.EventBox({
                             child: Widget.Box({
-                                css: "min-height: 46px",
+                                css: "min-height: 50px",
                             }),
                             on_primary_click: () => App.toggleWindow("archflexmenu"),
                         }),

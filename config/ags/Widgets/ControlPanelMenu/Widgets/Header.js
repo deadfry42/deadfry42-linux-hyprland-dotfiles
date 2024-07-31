@@ -4,6 +4,8 @@ const hyprland = await Service.import("hyprland")
 let window = "controlpanelmenu";
 let settingsPanelCommand = "XDG_CURRENT_DESKTOP=gnome gnome-control-center";
 
+let logoutCommand = "~/.config/wlogout/run.sh"
+
 const icons = {
     100: "\udb80\udc79",
     90: "\udb80\udc82",
@@ -50,13 +52,23 @@ export function Header() {
                         css: `font-size: 20px`,
                         margin_right: 10
                     }),
-                    Widget.Label({
-                        class_name: "arch-flex",
+                    Widget.Box({
                         margin_left: 15,
-                        css: `font-size: 16px`,
                         margin_right: 10,
                         visible: battery.bind('available'),
-                        label: battery.bind('percent').as(p => p > 0 ? `${getBatteryIcon(p)} ${p}%` : `${getBatteryIcon(0)} 0%`),
+                        children: [
+                            Widget.Icon({
+                                icon: battery.bind("icon_name"),
+                                css: `font-size: 16px`,
+                                class_name: "arch-flex",
+                            }),
+                            Widget.Label({
+                                class_name: "arch-flex",
+                                css: `font-size: 16px`,
+                                label: battery.bind('percent').as(p => p > 0 ? `${p}%` : `0%`),
+                                // class_name: battery.bind('charging').as(ch => ch ? 'charging' : ''),
+                            })
+                        ]
                     })
                 ]
             }),
@@ -69,7 +81,7 @@ export function Header() {
                         onPrimaryClick: () => {
                             App.toggleWindow(window);
                             if (hyprland.active) {
-                                // this is here because sometimes ags likes to spawn the window on workspace 1 for some reason, this is a temp fix
+                                // it is written like this because of ags deciding to spawn gnome-control-center on workspace 1
                                 hyprland.messageAsync(`dispatch exec ${settingsPanelCommand}`)
                             } else {
                                 Utils.execAsync(`bash -c "${settingsPanelCommand}"`);
@@ -84,7 +96,7 @@ export function Header() {
                     Widget.EventBox({
                         onPrimaryClick: () => {
                             App.toggleWindow(window);
-                            Utils.execAsync(`bash -c "wlogout"`);
+                            Utils.execAsync(`bash -c "${logoutCommand}"`);
                         },
                         child: Widget.Label({
                             class_name: "arch-flex",

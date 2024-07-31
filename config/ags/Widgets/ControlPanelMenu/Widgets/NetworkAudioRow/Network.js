@@ -9,6 +9,7 @@ const WifiIndicator = () => Widget.Box({
             width_request: padding,
         }),
         Widget.Icon({
+            class_name: "arch-flex",
             icon: network.wifi.bind('icon_name'),
             size: size,
             margin_right: 10,
@@ -24,6 +25,7 @@ const WifiIndicator = () => Widget.Box({
 })
 
 const WiredIndicator = () => Widget.Icon({
+    class_name: "arch-flex",
     icon: network.wired.bind('icon_name'),
     size: size,
 })

@@ -35,6 +35,7 @@ aaa rm -rf hardcoded-fixes-to-not-include.conf
 aaa rm -rf monitor.conf
 aaa touch monitor.conf
 aaa tee -a monitor.conf <<EOF
+aaa cp ~/.config/hypr/update.sh ./hypr
 # you need to change this file depending on what montior(s) you have
 # wiki: https://wiki.hyprland.org/Configuring/Monitors
 # monitor=name,resolution@framerate,position,scale
@@ -60,6 +61,11 @@ aaa cd ../
 # alacritty
 echo -e "${RED}Starting alacritty config!${CLEAR}"
 aaa cp -r ~/.config/alacritty .
+echo -e "${RED}No surgery required!${CLEAR}"
+
+# wlogout
+echo -e "${RED}Starting wlogout config!${CLEAR}"
+aaa cp -r ~/.config/wlogout .
 echo -e "${RED}No surgery required!${CLEAR}"
 
 echo -e "${RED}Distributing this file!${CLEAR}"
